@@ -1,0 +1,26 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .logo-section h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  .logo-section p {
+    margin: 0.2rem 0 0 0;
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  .contact-info p {
+    margin: 0;
+    font-weight: bold;
+    color: #e63946;
+  }

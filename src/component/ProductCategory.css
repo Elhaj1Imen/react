@@ -1,0 +1,16 @@
+.product-category {
+    margin-bottom: 2rem;
+  }
+  
+  .product-category h3 {
+    border-bottom: 2px solid #e63946;
+    padding-bottom: 0.5rem;
+    color: #2c3e50;
+    margin: 0 0 1rem 0;
+  }
+  
+  .product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+  }

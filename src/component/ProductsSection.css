@@ -1,0 +1,63 @@
+.products {
+  background-color: #f9f9f9;
+  padding: 3rem 1rem;
+  background-image: url('../assets/flashv1.png');
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: 200px;
+  background-blend-mode: overlay;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+.product-card {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top right;
+  padding-top: 120px; /* Espace pour l'image */
+}
+
+/* Images spécifiques pour chaque catégorie */
+.product-category:nth-child(1) .product-card { /* Flashs Voeloon */
+  background-image: url('../assets/flash58.png');
+}
+
+.product-category:nth-child(2) .product-card { /* Traitement Acoustique */
+  background-image: url('../assets/Filtre UV.png');
+}
+
+.product-category:nth-child(3) .product-card { /* Cinéma */
+  background-image: url('../assets/clampsuper.png');
+}
+
+
+.product-card[data-product="Flash Voeloon 331EX"] {
+  background-image: url('../assets/flashv1.png');
+}
+
+.product-card[data-product="Flash Voeloon FJ40 II"] {
+  background-image: url('../assets/Flash Voeloon Fj40.png');
+}
+.product-card[data-product="Flash Voeloon FJ40 II"] {
+  background-image: url('../assets/Flash Voeloon Fj40.png');
+}
+
+
+
+@media (max-width: 768px) {
+  .products {
+    background-image: none;
+  }
+  
+  .product-card {
+    padding-top: 0;
+    background-image: none !important;
+  }
+}

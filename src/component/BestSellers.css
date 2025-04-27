@@ -1,0 +1,75 @@
+/* Nouveaux styles pour les images des produits */
+.product-card {
+  position: relative;
+  padding-top: 180px; /* Espace pour l'image */
+  background-size: 160px;
+  background-position: top center;
+  background-repeat: no-repeat;
+  min-height: 300px;
+}
+
+/* Images spécifiques pour chaque produit */
+.product-card[data-name="Mousse Acoustique"] {
+  background-image: url('../assets/Mousseacoustique phonique best sellers.png');
+}
+
+.product-card[data-name="Mousse Acoustique Triangulaire"] {
+  background-image: url('../assets/Mousse Aroustique Triangulaire.png');
+}
+
+.product-card[data-name="Mousse Acoustique Pyramidale"] {
+  background-image: url('../assets/Mousse acoustique pyramidale.png');
+}
+
+
+
+.product-card[data-name="Panneau Mousse Pyramidale"] {
+  background-image: url('../assets/Mousse acoustique pyramidale.png'); /* Utilisez la même que Pyramidale ou ajoutez une image spécifique */
+}
+
+.product-card[data-name="Clap Cinéma Petit Modèle"] {
+  background-image: url('../assets/cinema petitmodele.png');
+  background-size: 120px;
+}
+
+.product-card[data-name="Clap Cinéma Grand Modèle"] {
+  background-image: url('../assets/cinemaGrand modele.png'); 
+  background-size: 120px;
+}
+
+
+.product-card:before {
+  top: 5px;
+  right: -35px;
+  font-size: 0.65rem;
+  padding: 0.2rem 1.8rem;
+}
+
+/* Style du contenu texte sous l'image */
+.product-card h4 {
+  margin-top: 1rem;
+  text-align: center;
+  color: #2c3e50;
+}
+
+.price {
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+/* Responsive ajusté pour les images */
+@media (max-width: 768px) {
+  .product-card {
+    padding-top: 140px;
+    background-size: 120px;
+    min-height: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-card {
+    padding-top: 120px;
+    background-size: 100px;
+    min-height: 220px;
+  }
+}
